@@ -1,0 +1,107 @@
+*{
+ padding:   0;
+ margin :   0;
+}
+.container-fluid{
+  padding: 0;
+}
+.navtop{
+  height: 2.5em;
+  background: #2989b6;
+  text-align: center;
+}
+.logo__link{
+  text-decoration: none;
+  color: #ffffff;
+  font-family: 'Oxygen', sans-serif;
+  font-size: 25px;
+}
+.logo__link:hover{
+  text-decoration: none;
+  color: #ffffff;
+}
+.content{
+  height: 38.9em;
+  background: #ececec;
+}
+.mid-content{
+  height: 100%;
+  padding: 65px 15px;
+}
+.content-box{
+  height: 100%;
+  width: 35%;
+  background: #ffffff;
+  margin: auto;
+  border-radius: 5px;
+}
+.navlist li{
+  width: 50%;
+  text-align: center;
+  border: solid 1px #e5e5e5;
+}
+.nav-item{
+  width: 50%;
+  text-align: center;
+}
+.nav-link{
+  color: #929292;
+}
+.nav-tabs .nav-link.active:visited{
+  border-bottom: solid 4px #2989b6;
+  color: #2989b6;
+}
+.nav-tabs .nav-link:hover{
+  border-bottom: solid 1px #2989b6;
+}
+.sign{
+  padding: 40px;
+}
+.btn-save{
+  margin-top: 20px;
+  width: 100%;
+  background: #2989b6;
+  color: #ffffff;
+}
+.regis{
+  padding: 40px;
+}
+@media screen and (max-width: 800px) {
+  .content-box{
+    height: 100%;
+    width: 95%;
+    background: #ffffff;
+    margin: auto;
+    border-radius: 5px;
+  }
+  .regis{
+    padding: 10px;
+  }
+}
+.radio{
+  width: 33.33%;
+  float: left;
+}
+.left{
+  width: 49%;
+  float: left;
+}
+.right{
+  width: 49%;
+  float: right;
+}
+.left1{
+  width: 55%;
+  float: left;
+}
+.right1{
+  width: 44%;
+  float: right;
+}
+.gender{
+  width: 30%;
+  float: left;
+}
+.check{
+  margin-right: 5px;
+}

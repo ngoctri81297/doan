@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>GloSh</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Oxygen" rel="stylesheet">
+    <link rel="stylesheet" href="../css/login.css">
+</head>
+<body>
+  <div class="container-fluid wrapper">
+    <div class="container-fluid navtop">
+        <a class="logo__link" href="#">GloSh</a>
+    </div>
+    <div class="container-fluid content">
+      <div class="container mid-content">
+        <div class="content-box">
+          <ul class="nav nav-tabs" role="tablist">
+              <li class="nav-item">
+                <a class="nav-link active" data-toggle="tab" href="#sign-in">Sign In</a>
+              </li>
+            </a>
+            <li class="nav-item">
+              <a class="nav-link" data-toggle="tab" href="#register">Register</a>
+            </li>
+          </ul>
+          <div class="tab-content">
+            <div id="sign-in" class="container-fluid tab-pane active">
+              <div class="login-box tab-pane active" id="login-pane" role="tabpanel">
+                <div class="login-body">
+                  <form class="sign" id="" action="" accept-charset="UTF-8" method="">
+                    <div class="form-group">
+                      <label for="username">Username or email</label>
+                      <input class="form-control top" required="required" type="text" name="user[login]" id="username">
+                    </div>
+                    <div class="form-group">
+                          <label for="user_password">Password</label>
+                          <input class="form-control bottom" required="required" type="password" name="user[password]" id="user_password">
+                    </div>
+                    <div class="remember-me checkbox">
+                      <label for="user_remember_me">
+                        <input class="remember-me-checkbox" type="checkbox" value="1" name="user[remember_me]" id="user_remember_me">
+                        <span>Remember me</span>
+                      </label>
+                    </div>
+                    <div class="submit-container">
+                      <input type="submit" name="commit" value="Sign in" class="btn btn-save">
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+            <div id=register class="container-fluid tab-pane">
+                <form class="regis" id="" action="" accept-charset="UTF-8" method="">
+                  <div class="form-group">
+                    <label for="fullname">Full name</label>
+                    <input class="form-control top" required="required" type="text" name="regis_fullname" id="regis_fullname">
+                  </div>
+                  <div class="form-group left">
+                      <label for="regis_username">Username</label>
+                      <input class="form-control" required="required" type="text" name="regis_username" id="regis_username">
+                  </div>
+                  <div class="form-group right">
+                      <label for="regis_pw">Password</label>
+                      <input class="form-control bottom" required="required" type="password" name="regis_pw" id="regis_pw">
+                  </div>
+                  <div class="form-group left1">
+                      <label for="regis_email">Email</label>
+                      <input class="form-control" required="required" type="text" name="regis_email" id="regis_email">
+                  </div>
+                  <div class="form-group right1">
+                      <label for="phone_number">Phone Number</label>
+                      <input class="form-control" required="required" type="text" name="regis_email" id="phone_number">
+                  </div>
+                  <div class="form-group">
+                    <label class="gender">Gender:</label>
+                    <label class="radio-inline gender">
+                      <input class="check" type="radio" name="optradio">Man
+                    </label>
+                    <label class="radio-inline gender">
+                      <input class="check" type="radio" name="optradio">Woman
+                    </label>
+                  </div>
+                  <div class="form-group">
+                    <label class="gender">Birth:</label>
+                    <input id="date" type="date" name="bday">
+                  </div>
+                  <div class="submit-container">
+                      <input type="submit" name="commit" value="Sign Up" class="btn btn-save">
+                  </div>
+                </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+</body>
+</html>
