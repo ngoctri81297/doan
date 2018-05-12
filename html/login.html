@@ -30,10 +30,9 @@
             <div id="sign-in" class="container-fluid tab-pane active">
               <div class="login-box tab-pane active" id="login-pane" role="tabpanel">
                 <div class="login-body">
-                  <form class="sign" id="" action="" accept-charset="UTF-8" method="">
                     <div class="form-group">
-                      <label for="username">Username or email</label>
-                      <input class="form-control top" required="required" type="text" name="user[login]" id="username">
+                      <label for="user_name">Email</label>
+                      <input class="form-control top" required="required" type="text" name="user[login]" id="user_name">
                     </div>
                     <div class="form-group">
                           <label for="user_password">Password</label>
@@ -46,9 +45,8 @@
                       </label>
                     </div>
                     <div class="submit-container">
-                      <input type="submit" name="commit" value="Sign in" class="btn btn-save">
+                      <input id="loginbtn" type="submit" name="commit" value="Sign in" class="btn btn-save">
                     </div>
-                  </form>
                 </div>
               </div>
             </div>
@@ -77,10 +75,10 @@
                   <div class="form-group">
                     <label class="gender">Gender:</label>
                     <label class="radio-inline gender">
-                      <input class="check" type="radio" name="optradio">Man
+                      <input class="check" value="Man" type="radio" name="optradio">Man
                     </label>
                     <label class="radio-inline gender">
-                      <input class="check" type="radio" name="optradio">Woman
+                      <input class="check" value="Woman" type="radio" name="optradio">Woman
                     </label>
                   </div>
                   <div class="form-group">
@@ -88,7 +86,7 @@
                     <input id="date" type="date" name="bday">
                   </div>
                   <div class="submit-container">
-                      <input type="submit" name="commit" value="Sign Up" class="btn btn-save">
+                      <input id="signupbtn" type="submit" name="commit" value="Sign Up" class="btn btn-save">
                   </div>
                 </form>
             </div>
@@ -98,5 +96,20 @@
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.0.2/firebase.js"></script>
+    <script>
+      // Initialize Firebase
+      var config = {
+        apiKey: "AIzaSyAycfYr_idsq1BSkwqxJaqwy3vHq-AIhbk",
+        authDomain: "glosh-3eb5d.firebaseapp.com",
+        databaseURL: "https://glosh-3eb5d.firebaseio.com",
+        projectId: "glosh-3eb5d",
+        storageBucket: "glosh-3eb5d.appspot.com",
+        messagingSenderId: "226785192070"
+      };
+      firebase.initializeApp(config);
+    </script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="../js/login.js"></script>
 </body>
 </html>
