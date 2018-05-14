@@ -1,8 +1,15 @@
-var myFirebase = new Firebase('https://glosh-1afd3.firebaseio.com/');
+var auth = firebase.auth();
 $(document).ready(function(){
     $("#loginbtn").click(function(){
-    // var user_name = $("#user_name").val();
-    // var user_password = $("#user_password").val();
-    // myFirebase.push({username:user_name, text:user_password});
+      var email = $("#user_name").val();
+      var password = $("#user_password").val();
+      auth.signInWithEmailAndPassword(email, password).then(function(user){
+        location.replace('home.html');
+      }).catch(function(error) {
+        // Handle Errors here.
+        var errorCode = error.code;
+        var errorMessage = error.message;
+        alert(errorMessage)
   });
+});
 });

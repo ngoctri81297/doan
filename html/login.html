@@ -13,7 +13,7 @@
 <body>
   <div class="container-fluid wrapper">
     <div class="container-fluid navtop">
-        <a class="logo__link" href="#">GloSh</a>
+        <a class="logo__link" href="login.html">GloSh</a>
     </div>
     <div class="container-fluid content">
       <div class="container mid-content">
@@ -33,18 +33,18 @@
                 <div class="login-body">
                     <div class="form-group">
                       <label for="user_name">Email</label>
-                      <input class="form-control top" required="required" type="text" name="user[login]" id="user_name">
+                      <input class="form-control top" required="required" type="text" name="user_name" id="user_name">
                     </div>
                     <div class="form-group">
                           <label for="user_password">Password</label>
                           <input class="form-control bottom" required="required" type="password" name="user[password]" id="user_password">
                     </div>
-                    <div class="remember-me checkbox">
+                    <!-- <div class="remember-me checkbox">
                       <label for="user_remember_me">
                         <input class="remember-me-checkbox" type="checkbox" value="1" name="user[remember_me]" id="user_remember_me">
                         <span>Remember me</span>
                       </label>
-                    </div>
+                    </div> -->
                     <div class="submit-container">
                       <input id="loginbtn" type="submit" name="commit" value="Sign in" class="btn btn-save">
                     </div>
@@ -96,28 +96,29 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
 
-<script src="https://www.gstatic.com/firebasejs/5.0.2/firebase.js"></script>
-<script src="https://www.gstatic.com/firebasejs/5.0.1/firebase-app.js"></script>
-<script src="/https://www.gstatic.com/firebasejs/5.0.1/firebase/5.0.1/firebase-auth.js"></script>
-<script src="https://www.gstatic.com/firebasejs/5.0.1/firebase-database.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.0.2/firebase.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.0.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.0.1/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.0.1/firebase-database.js"></script>
 
 
-<script>
-  // Initialize Firebase
-  var config = {
-    apiKey: "AIzaSyBQOHHZz67o7L7Q4BfDeDHtkwHQFVuz1GY",
-    authDomain: "glosh-1afd3.firebaseapp.com",
-    databaseURL: "https://glosh-1afd3.firebaseio.com",
-    projectId: "glosh-1afd3",
-    storageBucket: "",
-    messagingSenderId: "155679815050"
-  };
-  firebase.initializeApp(config);
-</script>
+    <script>
+      // Initialize Firebase
+      var config = {
+        apiKey: "AIzaSyBQOHHZz67o7L7Q4BfDeDHtkwHQFVuz1GY",
+        authDomain: "glosh-1afd3.firebaseapp.com",
+        databaseURL: "https://glosh-1afd3.firebaseio.com",
+        projectId: "glosh-1afd3",
+        storageBucket: "",
+        messagingSenderId: "155679815050"
+      };
+      firebase.initializeApp(config);
+    </script>
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
-    <script src="../js/login.js"></script>
+    <!-- <script src="../js/signup.js"></script> -->
     <script src="../js/createuser.js"></script>
     <script src="../js/addprofile.js"></script>
-    <script src="../js/getdata.js"></script>
+    <script src="../js/login.js"></script>
+    <!-- <script src="../js/getdata.js"></script> --> -->
 </body>
 </html>

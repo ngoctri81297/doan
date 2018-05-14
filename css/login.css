@@ -9,6 +9,7 @@
   height: 2.5em;
   background: #2989b6;
   text-align: center;
+  position: fixed;
 }
 .logo__link{
   text-decoration: none;
