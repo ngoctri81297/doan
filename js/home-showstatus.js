@@ -18,7 +18,7 @@ statusRef.on('value', gotData);
 
       str += '<tr><th id="Username">Username: '+username+'</th><th id="departday">Depart: '+date+'</th><th id="fromloca">From: '+from+'</th><th id="toloca">To: '+to+'</th></tr>'
       str += "<tr><td colspan=4><p class='text'>"+textstatus+"</p></td></tr>"
-      str += "<tr><td colspan='4'><button id='inbbtn'>INBOX</button></td></tr><br>"
+      str += "<tr><td colspan='4'><button onclick='showchat("+username+")' id='inbbtn'>INBOX</button></td></tr><br>"
       // end test
       // end ..
     }
