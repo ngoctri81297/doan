@@ -22,7 +22,9 @@
     <div class="nav-logo">
       <a class="logo__link" href="home.html">GloSh</a>
     </div>
-    <div class="nav-right">
+    <div class="nav-right" id="nav-right">
+      <p id="username-p" style="display:none"></p>
+      <a id="username-profile" class="username-profile-style" href=""></a>
       <div class="log-out">
         <a id="logoutbtn" href="">
           <i class="fas fa-sign-out-alt"></i>
@@ -51,6 +53,7 @@
               </div>
               <div class="col-md-4">
                 <div class="to">
+
                   <div class="form-group">
                       <label for="to">To:</label>
                       <input class="form-control" required="required" type="text" name="to" id="to">
@@ -73,18 +76,22 @@
       </table>
     </div>
     <div class="chat-box">
-      <div class="chat-user"></div>
-      <div class="chat-content"></div>
+      <div class="chat-user" id="chat-user">
+        <p id="fr-user"></p>
+      </div>
+      <div class="chat-content" id="chat-content"></div>
       <div class="chat-inb">
           <input class="form-control" required="required" type="text" name="inbox" id="chat-inbox">
-          <input class="send-btn" type="submit" value="Send">
+          <input class="send-btn" id="send-btn" type="submit" value="Send">
       </div>
     </div>
   </div>
   <div class="builder hidden-sm-down" id="builder">
       <a class="builder-toggle"><i class="far fa-envelope"></i></a>
       <div class="inner">
+          <p class="his-contact">History Contact</p>
         <div class="builder-container">
+
         </div>
       </div>
     </div>
@@ -111,11 +118,27 @@
       firebase.initializeApp(config);
     </script>
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+
+
+    <script>
+
+    $(document).ready(function(){
+      $('.inbbtn').click(function(){
+        alert("sssss")
+      })
+
+    });
+
+    </script>
+
     <script src="../js/home-logout.js"></script>
     <script src="../js/home-builder.js"></script>
+    <script src="../js/home-username.js"></script>
     <script src="../js/home-sendstatus-data.js"></script>
     <script src="../js/home-showstatus.js"></script>
+    <script src="../js/home-sendchat.js"></script>
     <script src="../js/home-btn-inb.js"></script>
+    <script src="../js/home-chat-history.js"></script>
     <!-- <script src="../js/getdata.js"></script> -->
 </body>
 </html>
