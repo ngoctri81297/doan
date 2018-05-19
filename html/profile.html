@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>GloSh</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Oxygen" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/login.css">
+    <link rel="stylesheet" href="../css/home.css">
+    <link rel="stylesheet" href="../css/profile.css">
+    <script src='https://cdn.firebase.com/js/client/2.4.0/firebase.js'></script>
+</head>
+<body>
+  <div class="container-fluid wrapper">
+      <div class="container-fluid navtop">
+          <div class="nav-left">
+
+            </div>
+            <div class="nav-logo">
+              <a class="logo__link" href="home.html">GloSh</a>
+            </div>
+            <div class="nav-right" id="nav-right">
+              <div class="log-out">
+                <a id="logoutbtn" href="">
+                  <i class="fas fa-sign-out-alt"></i>
+                </a>
+              </div>
+        </div>
+      </div>
+      <div class="container-fluid background">
+          <div class="container-fluid profile-container">
+            <p class="title1">PROFILE</p>
+            <div class="line-profile"></div>
+            <div class="show-profile">
+                <table class="table table-striped table-bordered table-hover text-left" id="profile-order">
+                  </table>
+            </div>
+            <div class="setnew-profile">
+                <table class="table table-striped table-bordered table-hover text-left" id="">
+                    <p class="title1">UPDATE PROFILE</p>
+                    <div class="line-profile"></div>
+                  <div class="form-group">
+                    <label for="newusername">New Username:</label>
+                    <input class="form-control" required="required" type="text" name="newusername" id="newusername">
+                </div>
+                <div class="form-group">
+                    <label for="newfullname">New FullName:</label>
+                    <input class="form-control" required="required" type="text" name="newfullname" id="newfullname">
+                </div>
+                <div class="form-group">
+                    <label class="gender">Birth:</label>
+                    <input class="form-control" id="birth-update" type="date" name="bday">
+                  </div>
+                <div class="form-group">
+                    <label class="gender">Gender:</label>
+                    <label class="radio-inline">
+                      <input class="check" value="Man" type="radio" name="update-optradio">Man
+                    </label>
+                    <label class="radio-inline">
+                      <input class="check" value="Woman" type="radio" name="update-optradio">Woman
+                    </label>
+                  </div>
+                  <div class="form-group">
+                      <label for="phone_number">Phone Number:</label>
+                      <input class="form-control" required="required" type="text" name="phone_number" id="update-phone_number">
+                  </div>
+                  <button type="submit" class="btn btn-primary" id="update-btn">Update</button>
+                  </table>
+                  </div>
+            </div>
+          <div class="line-profile"></div>
+          <div class="container-fluid mystatus-container">
+              <p class="title1">MY STATUS</p>
+              <div class="line-profile"></div>
+              <div class="show-my-status">
+                  <table class="table table-striped table-bordered table-hover text-left" id="mystatus-order">
+                    </table>
+              </div>
+            </div>
+      </div>
+      </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+
+    <script src="https://www.gstatic.com/firebasejs/5.0.2/firebase.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.0.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.0.1/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.0.1/firebase-database.js"></script>
+
+
+    <script>
+      // Initialize Firebase
+      var config = {
+        apiKey: "AIzaSyBQOHHZz67o7L7Q4BfDeDHtkwHQFVuz1GY",
+        authDomain: "glosh-1afd3.firebaseapp.com",
+        databaseURL: "https://glosh-1afd3.firebaseio.com",
+        projectId: "glosh-1afd3",
+        storageBucket: "",
+        messagingSenderId: "155679815050"
+      };
+      firebase.initializeApp(config);
+    </script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="../js/home-logout.js"></script>
+    <script src="../js/profile.js"></script>
+    <script src="../js/profile-updateprofile.js"></script>
+</body>
+</html>

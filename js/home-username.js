@@ -77,11 +77,17 @@ function showMess(me){
         var messStr = "<div class = 'myMess'>Me: "+ss[i]['text']+"</div><div class='blockMess'></div>"
 
         $("#chat-content").append(messStr)
+        $('#chat-content').animate({
+          scrollTop: $('#chat-content')[0].scrollHeight
+  }, 0);
       }else{
         if(ss[i]['myName'] == $('#fr-user').text() && ss[i]['frName'] == $('#username-p').text() )
         {
           var messStr = "<div class = 'frMess'>"+ss[i]['myName']+":"+ss[i]['text']+"</div><div class='blockMess'></div>"
         $("#chat-content").append(messStr)
+        $('#chat-content').animate({
+          scrollTop: $('#chat-content')[0].scrollHeight
+  }, 0);
         }
       }
     }// foreach ss

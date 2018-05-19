@@ -21,7 +21,6 @@ var email_term = ""
 }
 //end
 $(document).ready(function(){
-  $(".inbbtn").css({"color":"red"})
     $("#statusbtn").click(function(){
     var Datemove = $("#date-move").val();
     var From = $("#from").val();

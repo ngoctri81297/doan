@@ -1,0 +1,31 @@
+.title1{
+  padding: 65px;
+  margin: 0;
+  font-size: 25px;
+}
+.log-out{
+  width: 97%;
+}
+.show-profile{
+  width:100%;
+}
+.setnew-profile{
+  width:30%;
+  padding: 20px;
+}
+.line-profile{
+  width: 100%;
+  height: 1px;
+  background: #9e9e9e;
+  margin-bottom: 10px;
+}
+#profile-order{
+  margin-left: 20px;
+}
+#mystatus-order{
+  width: 80%;
+  margin-left: 20px;
+}
+#profile-email{
+  display: none;
+}
