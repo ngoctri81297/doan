@@ -83,7 +83,7 @@ function showMess(me){
       }else{
         if(ss[i]['myName'] == $('#fr-user').text() && ss[i]['frName'] == $('#username-p').text() )
         {
-          var messStr = "<div class = 'frMess'>"+ss[i]['myName']+":"+ss[i]['text']+"</div><div class='blockMess'></div>"
+          var messStr = "<div class = 'frMess'>"+ss[i]['myName']+": "+ss[i]['text']+"</div><div class='blockMess'></div>"
         $("#chat-content").append(messStr)
         $('#chat-content').animate({
           scrollTop: $('#chat-content')[0].scrollHeight

@@ -33,7 +33,7 @@ var email_term = ""
       var gender = user[k].Gender;
       var phone = user[k].Phone;
       if(email==email_term){
-          str += "<tr><th>Username: "+username+"</th></tr>"
+          str += "<tr><th><p id='usersta'></p>Username: "+username+"</th></tr>"
           str += "<tr><th><p id='profile-email'>"+email+"</p>Email: "+email+"</th></tr>"
           str += "<tr><th>FullName: "+fullname+"</th></tr>"
           str += "<tr><th>Birth: "+birth+"</th></tr>"
@@ -69,12 +69,9 @@ var email_term = ""
       if(username==UserName_global){
       str += '<tr><th id="Username">Username: '+username+'</th><th id="departday">Depart: '+date+'</th><th id="fromloca">From: '+from+'</th><th id="toloca">To: '+to+'</th></tr>'
       str += "<tr><td colspan=4><p class='text'>"+textstatus+"</p></td></tr>"
-      str += "<tr><td colspan='4'><button onclick='show(this)' username='"+username+"' class = 'inbbtn' id='"+username+"'>DELETE</button></td></tr><br>"
+    str += "<tr><td colspan='4'><p id='user--sta'></p><button onclick='del(this)' date='"+date+"' class = 'inbbtn' id='"+textstatus+"'>DELETE</button></td></tr><br>"
       }
-      $("#mystatus-order").append(str)
-
-
-
+      $("#mystatus-order").html(str)
     }
 
   }
