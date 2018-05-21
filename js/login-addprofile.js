@@ -18,6 +18,9 @@ $(document).ready(function(){
   //     var username= user[k].Username;
   //     username_global= username
   //     if(Username!=username_global){
+    if(Fullname=="" || Regis_email=="" || Phone_number=="" || Gender=="" || Date==""){
+      alert("Please complete the form")
+    }else{
         myUsers.push({
           Fullname:Fullname,
           Username:Username,
@@ -26,6 +29,7 @@ $(document).ready(function(){
           Gender:Gender,
           Birth: Date
         });
+      }
   //     }else{
   //       alert('Username exist')
   //     }
