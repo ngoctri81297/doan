@@ -31,6 +31,22 @@ $('#send-btn').on('click', function (e) {
     alert("Loi")
   }
 });
+$('#chat-inbox').keypress(function(e,b) {
+  if(e.which == 13) {
+    e.preventDefault();
+    var text = $('#chat-inbox').val();
+    var myName = $('#username-p').text()
+    var frName = $('#fr-user').text()
+    if (text != "" && myName != "" && frName != "" ) {
+        myFirebase.push({myName: myName,frName: frName, text: text});
+        $('#chat-inbox').val('');
+        $('#chat-content').html("");
+    }else
+    {
+      alert("Loi")
+    }
+  }
+});
 
 
   });
