@@ -17,7 +17,8 @@
   <div class="container-fluid wrapper">
   <div class="container-fluid navtop">
     <div class="nav-left">
-
+        <input class="form-control" required="required" type="text" name="from" id="search">
+        <i id="searchbtn" class="fas fa-search"></i>
     </div>
     <div class="nav-logo">
       <a class="logo__link" href="home.html">GloSh</a>
@@ -118,19 +119,6 @@
       firebase.initializeApp(config);
     </script>
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
-
-
-    <script>
-
-    $(document).ready(function(){
-      $('.inbbtn').click(function(){
-        alert("sssss")
-      })
-
-    });
-
-    </script>
-
     <script src="../js/home-logout.js"></script>
     <script src="../js/home-builder.js"></script>
     <script src="../js/home-username.js"></script>
@@ -138,6 +126,7 @@
     <script src="../js/home-showstatus.js"></script>
     <script src="../js/home-sendchat.js"></script>
     <script src="../js/home-chat-history.js"></script>
+    <script src="../js/home-search.js"></script>
     <!-- <script src="../js/getdata.js"></script> -->
 </body>
 </html>

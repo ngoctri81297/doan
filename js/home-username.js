@@ -47,7 +47,6 @@ var email_term = ""
        }
 
       }
-      console.log(frNameArr);
       var historyNameStr = ""
       for(i in frNameArr){
        historyNameStr += "<div class= 'historyName' onclick='showMess(this)' id='"+frNameArr[i]+"'>"+frNameArr[i]+"</div>"
