@@ -54,7 +54,7 @@ var email_term = ""
   function del(em){
     $('#user--sta').text(em.id)
     var ref = database.ref('status');
-    ref.orderByChild('Status').equalTo($('#user--sta').text()).on("value", function(snapshot) {
+    ref.orderByChild('Id').equalTo($('#user--sta').text()).on("value", function(snapshot) {
       snapshot.forEach (function(child) {
          var key = child.key;
          key_global_status = key;

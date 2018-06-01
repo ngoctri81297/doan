@@ -5,7 +5,7 @@ $(document).ready(function(){
     var password = $("#regis_pw").val();
     auth.createUserWithEmailAndPassword(email, password).then(function(user){
       var email = $("#regis_email").val();
-      location.replace('login.html');
+      location.replace('index.html');
       alert("Successfully created user account with: "+ email);
     }).catch(function(error) {
       // Handle Errors here.

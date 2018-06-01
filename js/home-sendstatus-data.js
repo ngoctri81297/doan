@@ -2,7 +2,8 @@ var myStatus = new Firebase('https://glosh-1afd3.firebaseio.com/status');
 var databasestatus = firebase.database();
 var database = firebase.database();
 var userRef = database.ref('users');
-var UserName_global = ""
+var UserName_global = "";
+var id_global="";
 //start
 userRef.on('value', takeData);
 function takeData(data){
@@ -26,23 +27,28 @@ $(document).ready(function(){
     var From = $("#from").val();
     var To = $("#to").val();
     var Status = $("#status").val();
+    statusRef.on('value', getData);
+    function getData(data){
+    var status = data.val();
+    var keys = Object.keys(status);
     if(Status!="" && Datemove!="" && From!="" && To!=""){
+      for (var i=0;i<keys.length;i++) {
+
+      }
       myStatus.push({
       DepartDay:Datemove,
       From:From,
       To:To,
       Status:Status,
-      UserName: UserName_global
+      UserName: UserName_global,
+      Id: "s"+i,
     });
     location.reload("home.html")
     }
     else{
       alert("Please add a Status Information")
     }
+  }
   });
-  $(".inbbtn").click(function(){
-    alert("sss")
-  });
-
 });
 
