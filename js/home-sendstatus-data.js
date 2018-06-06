@@ -32,16 +32,14 @@ $(document).ready(function(){
     var status = data.val();
     var keys = Object.keys(status);
     if(Status!="" && Datemove!="" && From!="" && To!=""){
-      for (var i=0;i<keys.length;i++) {
-
-      }
+      var math = Math.floor(Math.random() * 1000000000);
       myStatus.push({
       DepartDay:Datemove,
       From:From,
       To:To,
       Status:Status,
       UserName: UserName_global,
-      Id: "s"+i,
+      Id: "s"+math,
     });
     location.reload("home.html")
     }
