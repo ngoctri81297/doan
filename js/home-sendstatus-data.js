@@ -1,3 +1,4 @@
+//----------------------------------------USER-ADD-STATUS-----------------------------------------//
 var myStatus = new Firebase('https://glosh-1afd3.firebaseio.com/status');
 var databasestatus = firebase.database();
 var database = firebase.database();

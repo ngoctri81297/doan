@@ -1,3 +1,4 @@
+//----------------------------------------USER-SEARCH-----------------------------------------//
 var database = firebase.database();
 var statusRef = database.ref('status');
 var email_global = "";

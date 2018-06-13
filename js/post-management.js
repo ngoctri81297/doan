@@ -1,3 +1,4 @@
+//----------------------------------------DISPLAY AND DELETE STATUS-----------------------------------------//
 var database = firebase.database();
 var statusRef = database.ref('status');
 var key_global_status="";

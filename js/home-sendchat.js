@@ -1,3 +1,4 @@
+//----------------------------------------USER-SEND-CHAT-----------------------------------------//
 var myFirebase = new Firebase('https://glosh-1afd3.firebaseio.com/messages')
 $(document).ready(function() {
 

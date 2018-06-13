@@ -1,3 +1,4 @@
+//----------------------------------------LOGIN-----------------------------------------//
 var auth = firebase.auth();
 $(document).ready(function(){
     $("#loginbtn").click(function(){

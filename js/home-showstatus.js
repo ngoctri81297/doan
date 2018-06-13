@@ -1,12 +1,8 @@
+//----------------------------------------STATUS AND MESSAGE DISPLAY-----------------------------------------//
 var database = firebase.database();
 var statusRef = database.ref('status');
 var userRef = database.ref('users');
 var messRef = firebase.database().ref("messages");
-
-
-
-
-
 statusRef.on('value', gotData);
     function gotData(data){
       $('#info-order').html("");
@@ -61,25 +57,6 @@ statusRef.on('value', gotData);
      });
 
 }
-
-
-
-
-  //    myFirebase.on('child_added', function (snapshot){
-  //     var message = snapshot.val();
-  //     $("#chat-user").append(name);
-
-  //     var html =
-  //         '<tr>' +
-  //             '<td><i class="glyphicon glyphicon-user"></i> ' + message.name + ': </td>' +
-  //             '<td>' + message.text + '</td>' +
-  //         '</tr>';
-  //     $('#chat-content').append(html);
-  //     // $('#scollDiv').animate({
-  //     //     scrollTop: $('#scollDiv')[0].scrollHeight
-  //     // }, 0);
-  // });
-
 
 
 

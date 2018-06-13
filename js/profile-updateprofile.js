@@ -1,3 +1,4 @@
+//----------------------------------------USER UPDATE AND DELETE STATUS-----------------------------------------//
 var database = firebase.database();
 var userRef = database.ref('users');
 var statusRef = database.ref('status');

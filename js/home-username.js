@@ -1,3 +1,4 @@
+//----------------------------------------DISPLAY FRIEND-----------------------------------------//
 var myStatus = new Firebase('https://glosh-1afd3.firebaseio.com/status');
 var databasestatus = firebase.database();
 var database = firebase.database();
@@ -48,7 +49,7 @@ var email_term = ""
 
       }
       var historyNameStr = ""
-      for(i in frNameArr){
+      for(i=frNameArr.length - 1;i>=0;i--){
        historyNameStr += "<div class= 'historyName' onclick='showMess(this)' id='"+frNameArr[i]+"'>"+frNameArr[i]+"</div>"
       }
 

@@ -1,3 +1,4 @@
+//----------------------------------------DISPLAY PROFILE AND STATUS-----------------------------------------//
 var database = firebase.database();
 var userRef = database.ref('users');
 var statusRef = database.ref('status');

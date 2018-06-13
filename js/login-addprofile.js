@@ -1,3 +1,4 @@
+//----------------------------------------ADD-USER-----------------------------------------//
 var myUsers = new Firebase('https://glosh-1afd3.firebaseio.com/users');
 var database = firebase.database();
 var username_global = "";

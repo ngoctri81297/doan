@@ -1,3 +1,4 @@
+//----------------------------------------LOG-OUT-----------------------------------------//
 var auth = firebase.auth();
 $(document).ready(function(){
     $("#logoutbtn").click(function(){

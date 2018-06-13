@@ -1,3 +1,4 @@
+//----------------------------------------SEARCH-FOR-ADMIN-----------------------------------------//
 var database = firebase.database();
 var statusRef = database.ref('status');
 var email_global = "";
